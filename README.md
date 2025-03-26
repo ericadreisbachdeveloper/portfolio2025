@@ -9,3 +9,5 @@
 4. Sales-forward content with tiered offerings 
 
 5. A free offering like an eBook or a masterclass
+
+6. Inspiration: https://uizard.io/blog/content/images/size/w1600/2023/08/Screenshot-2023-08-03-at-13.46.27.png 
