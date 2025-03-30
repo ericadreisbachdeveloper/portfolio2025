@@ -9,12 +9,14 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) {
 <?php /* ref: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/navigation_role */ ?>
 
 
+
+<a class="sr-only skip-nav" href="#main">Skip navigation</a>
+
+
+
 <a href="<?php echo( SITE ); ?>" aria-label="homepage" class="logo-href">
 erica dreisbach
 </a>
-
-
-<a class="sr-only skip-nav" href="#main">Skip navigation</a>
 
 
 <nav class="nav-header" aria-label="main">

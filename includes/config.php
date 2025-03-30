@@ -9,11 +9,5 @@ else {
 }
 define('SITE', $site); 
 
-/* 
-if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
-    die( header('location: ' . SITE . '/error/' ) );
-}
-    */
-
 ?>
 

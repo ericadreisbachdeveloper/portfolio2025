@@ -15,15 +15,24 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) {
 
 <title>Top Full Stack Chicago Web Developer - erica drisbach </title>
 
-<link rel="stylesheet" href="assets/css/style.css?v=1">
+<link rel="stylesheet" href="<?php echo( SITE ); ?>/assets/css/style.css?v=1">
 
-<script src="assets/js/nav.js"></script>
+<script src="<?php echo( SITE ); ?>/assets/js/nav.js"></script>
 
 </head>
+
 
 <body>
 
 
+<div class="wrapper">
+
+
 <header class="header">
-<?php include('nav.php'); ?>
+    <div class="header-container">
+    <?php include('nav.php'); ?>
+    </div>
 </header>
+
+
+<main id="main">
