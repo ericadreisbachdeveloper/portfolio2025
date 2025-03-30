@@ -1,0 +1,47 @@
+/* Nav */
+
+
+
+.nav-ul,
+.subnav {
+    @extend %ul-reset;
+}
+
+
+@media (min-width: $laptop) {
+
+    .nav-ul {
+        display: flex;
+    }
+
+    .nav-li>.nav-a {
+        padding: 1.414rem 1.414rem;
+    }
+
+    .subnav-li>.nav-a {
+        padding: .8rem 1.414rem;
+    }
+
+    .nav-a {
+        display: block;
+    }
+
+    .nav-li:has(.subnav) {
+        position: relative;
+    }
+
+    .nav-li:has(.subnav):hover>.subnav,
+    .nav-li:focus-within>.subnav {
+        height: auto;
+    }
+
+    .subnav {
+        width: 16rem;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        overflow-y: hidden;
+    }
+
+}

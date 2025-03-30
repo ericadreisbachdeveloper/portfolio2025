@@ -1,0 +1,39 @@
+/* Typography */
+
+
+%sans {
+    font-family: sans-serif;
+}
+
+.sr-only,
+.nav-header,
+.sans {
+    @extend %sans;
+}
+
+
+.sr-only,
+.logo-href {
+    @extend %large;
+}
+
+
+@media (max-width: $smaller-than-laptop) {
+
+    %large {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+
+}
+
+
+
+@media (min-width: $laptop) {
+
+    %large {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+}

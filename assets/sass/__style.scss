@@ -1,0 +1,18 @@
+/* 
+ * structured according to many of the principles 
+ * of https://ricostacruz.com/rscss/
+ */
+
+@import '_breakpoints.scss';
+@import '_colors.scss';
+@import '_mixins.scss';
+@import '_typography.scss';
+@import 'footer.scss';
+@import 'global.scss';
+@import 'header.scss';
+@import 'nav.scss';
+
+
+/* 
+ * $ sass --watch assets/sass/__style.scss:assets/css/style.css --style compressed 
+ */
