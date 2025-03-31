@@ -1,0 +1,22 @@
+/* footer */
+
+
+@media (min-width: $laptop) {
+
+    $footerh: 10rem;
+
+    .wrapper {
+        min-height: calc(100vh - $footerh);
+    }
+
+    .footer {
+        height: $footerh;
+    }
+
+}
+
+
+.footer .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

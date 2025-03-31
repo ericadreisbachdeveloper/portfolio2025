@@ -1,6 +1,125 @@
 /* Typography */
 
 
+<<<<<<< HEAD
 .caps {
     text-transform: uppercase;
+=======
+%sans {
+    font-family: sans-serif;
+}
+
+.small,
+[class*="td"],
+.p,
+.sr-only,
+.nav-header,
+.sans {
+    @extend %sans;
+}
+
+
+.sr-only,
+.logo-href {
+    @extend %large;
+}
+
+
+
+/* Alignment */
+.center,
+.h2-subhead,
+.h2,
+.h1 {
+    text-align: center;
+}
+
+
+.h1:has(+.h2-subhead) {
+    margin-bottom: 0;
+}
+
+
+
+/* Headings */
+.h2-subhead {
+    margin: 0;
+}
+
+
+
+/* Italic */
+.h2-subhead {
+    font-style: italic;
+}
+
+
+
+/* Size */
+.small {
+    @extend %small;
+}
+
+.h2-subhead,
+.p {
+    @extend %default;
+}
+
+.h2 {
+    @extend %h2;
+}
+
+.h1 {
+    @extend %h1;
+}
+
+
+
+/* Weight */
+.h2-subhead {
+    font-weight: 400;
+}
+
+
+
+@media (max-width: $smaller-than-laptop) {
+
+    %small {
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+
+    %large {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+
+}
+
+
+
+@media (min-width: $laptop) {
+
+    %small {
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+
+    %default {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    %large,
+    %h2 {
+        font-size: 2rem;
+        line-height: 2.414rem;
+    }
+
+    %h1 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+>>>>>>> 250331-pull
 }

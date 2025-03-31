@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 // Structured according to many
 // of the principles of RSCSS
 // rscss.io/components.html
 
+=======
+/* 
+ * structured according to many of the principles 
+ * of https://ricostacruz.com/rscss/
+ */
+>>>>>>> 250331-pull
 
 @import '_breakpoints.scss';
 @import '_colors.scss';
@@ -11,7 +18,15 @@
 @import 'global.scss';
 @import 'header.scss';
 @import 'nav.scss';
+<<<<<<< HEAD
 
 
 // From root 
 // $ sass --watch assets/sass/__style.scss:assets/css/style.css --style compressed
+=======
+@import 'table.scss';
+
+/* 
+ * $ sass --watch assets/sass/__style.scss:assets/css/style.css --style compressed 
+ */
+>>>>>>> 250331-pull
