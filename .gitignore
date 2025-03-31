@@ -74,3 +74,15 @@ node_modules/
 # /dir/ will match only a directory named dir
 # /dir/* will match all files, directories and anything else inside a
 # directory named dir (but not the dir directory itself).
+
+
+
+# 
+# $ git checkout -b YYMMDD-remote
+# $ git fetch REMOTE MAIN
+# $ git reset --hard REMOTE/main
+# $ git add .
+# $ git commit
+# $ git checkout main
+# $ git merge YYMMDD-remote 
+#
