@@ -1,10 +1,30 @@
-/* Typography */
+/* typography */
 
 
-<<<<<<< HEAD
+
+/* alignment */
+.center,
+.h2-subhead,
+.h2,
+.h1 {
+    text-align: center;
+}
+
+
+.h1:has(+.h2-subhead) {
+    margin-bottom: 0;
+}
+
+
+/* case */
 .caps {
     text-transform: uppercase;
-=======
+}
+
+
+
+/* font */
+.ul,
 %sans {
     font-family: sans-serif;
 }
@@ -19,50 +39,37 @@
 }
 
 
-.sr-only,
-.logo-href {
-    @extend %large;
-}
 
-
-
-/* Alignment */
-.center,
-.h2-subhead,
-.h2,
-.h1 {
-    text-align: center;
-}
-
-
-.h1:has(+.h2-subhead) {
-    margin-bottom: 0;
-}
-
-
-
-/* Headings */
+/* headings */
 .h2-subhead {
     margin: 0;
 }
 
 
 
-/* Italic */
+/* italic */
 .h2-subhead {
     font-style: italic;
 }
 
 
 
-/* Size */
-.small {
+/* size */
+.p.small {
     @extend %small;
 }
 
+.h1-default,
+.li,
+[class*="td"],
 .h2-subhead,
 .p {
     @extend %default;
+}
+
+.sr-only,
+.logo-href {
+    @extend %large;
 }
 
 .h2 {
@@ -75,7 +82,7 @@
 
 
 
-/* Weight */
+/* weight */
 .h2-subhead {
     font-weight: 400;
 }
@@ -121,5 +128,4 @@
         line-height: 2.8rem;
     }
 
->>>>>>> 250331-pull
 }

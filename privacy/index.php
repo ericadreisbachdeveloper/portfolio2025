@@ -1,5 +1,5 @@
-<?php 
-include('../../config/config.php'); 
+<?php
+include('../../config/config.php');
 
 include('../header.php'); ?>
 
@@ -15,9 +15,11 @@ include('../header.php'); ?>
 
         <p class="p">Other cookies are added by Google's reCAPTCHA when interacting with the site's contact form. <a href="https://developers.google.com/recaptcha/docs/faq#:~:text=Does%20reCAPTCHA%20use%20cookies%3F,www.recaptcha.net%20instead." target="_blank" rel="nofollowopener">Read more about reCAPTCHA's&nbsp;cookies</a>.</p>
 
-        <p class="p">Other than those, the site does not use other cookies or similar tracking tools.</p>
+        <p class="p">And one other cookie is set as a session variable to configure the site address for serving assets. </p>
 
-        <p class="p">Any information shared via this site's contact form will be kept confidential, barring explicit permission otherwise. In particular, if I'm not available for your project but can recommend a colleague, I will only share details of your project with such colleague upon receiving your explicit written consent.</p>
+        <p class="p">Other than those, the site does not use other cookies or similar tracking tools. No user data is collected by ericadreisbach.com other than information shared via the contact form. </p>
+
+        <p class="p">Any information shared via the contact form will be kept confidential, barring explicit permission otherwise. In particular, if I'm not available for your project but can recommend a colleague, I will only share details of your project with such colleague upon receiving your explicit written consent.</p>
 
     </div>
 </section>

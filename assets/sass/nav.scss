@@ -30,39 +30,39 @@
         position: relative;
     }
 
-    .nav-li:has(.subnav):hover>.subnav,
-    .nav-li:focus-within>.subnav {
-        height: auto;
-
-
-    }
-
-    .nav-li:has(.subnav):hover,
-    .nav-li:focus-within {
-
-        &:after {
-            width: 100%;
-            height: 1rem;
-            top: 0rem;
-            left: 0;
-            position: absolute;
-
-            content: '';
-            display: block;
-        }
-
-    }
-
-    .subnav {
+    .nav-li:has(.subnav)>.subnav {
         width: 16rem;
-        height: 0;
+        height: auto;
+        max-height: 0;
         background-color: white;
         box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3);
         position: absolute;
         top: 100%;
         left: 0;
-        overflow-y: hidden;
+        opacity: 0;
         z-index: 10;
+
+        @include transition(opacity .1s ease-in-out);
+
+
+    }
+
+
+    .nav-li:has(.subnav):hover>.subnav,
+    .nav-li:focus-within>.subnav {
+        max-height: fit-content;
+        opacity: 1;
+
+        &:before {
+            display: block;
+            width: 100%;
+            height: 1rem;
+            content: '';
+            position: absolute;
+            top: 0rem;
+            left: 0;
+        }
+
     }
 
 }

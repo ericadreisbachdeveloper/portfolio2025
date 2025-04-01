@@ -1,9 +1,10 @@
 /* Global */
 
-<<<<<<< HEAD
+
 /* breaks - br - <br> */
 .span-br {
-=======
+    display: block;
+}
 
 
 /* accessibility */
@@ -43,6 +44,7 @@
 
 
 
+
 /* body */
 body {
     margin: 0;
@@ -72,6 +74,13 @@ body {
 
 
 
+/* hiding - hidden */
+.hidden {
+    display: none;
+}
+
+
+
 /* href - links */
 [href] {
     color: black;
@@ -79,7 +88,7 @@ body {
 }
 
 .p [href] {
-    background-color: yellow;
+    @include linkline;
 }
 
 
@@ -93,27 +102,19 @@ body {
 
 /* section */
 .section {
->>>>>>> 250331-pull
     display: block;
 }
 
-
-<<<<<<< HEAD
-/* hiding - hidden */
-.hidden {
-    display: none;
-}
 
 
 /* superscript - sup - <sup> */
 sup {
     line-height: 0;
-=======
+}
 
 /* ul */
 %ul-reset {
     list-style-type: none;
     margin: 0;
     padding: 0;
->>>>>>> 250331-pull
 }

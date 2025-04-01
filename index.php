@@ -15,7 +15,7 @@ include('header.php');
 <section class="section section-hero">
     <div class="container">
 
-        <h1 class="h1">Full Stack Web Developer </h1>
+        
         <h2 class="h2">Human Intelligence</h1>
 
     </div>
@@ -26,14 +26,21 @@ include('header.php');
 <section class="section" id="erica-versus-artificial-intelligence">
     <div class="container">
 
-<<<<<<< HEAD
-<h2 class="caps">AI is a tool, but not a collaborator.</h2>
-<p>Not yet, at least! </p>
+        <h2 class="h2">AI is a tool, but not a collaborator.</h2>
 
-<h2>AI vs. erica</h2>
+        <p class="p center">Not yet, at least! </p>
 
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container">
+
+        
         <h2 class="h2">AI vs. erica</h2>
->>>>>>> 250331-pull
+
 
         <table>
 
@@ -128,7 +135,7 @@ include('header.php');
         </ul>
     </div>
 
-    
+
 </section>
 <!-- /#pricing -->
 

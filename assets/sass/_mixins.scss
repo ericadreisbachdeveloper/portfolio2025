@@ -38,6 +38,89 @@
 }
 
 
+@property --p1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --p2 {
+    syntax: '<length-percentage>';
+    inherits: false;
+    initial-value: calc(100% - .1rem);
+}
+
+@property --p3 {
+    syntax: '<length-percentage>';
+    inherits: false;
+    initial-value: calc(100% - 1.1rem);
+}
+
+@property --p4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 100%;
+}
+
+@property --l {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 180deg;
+}
+
+// ref: https://drafts.css-houdini.org/css-properties-values-api-1/#at-property-rule
+@property --colora {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: transparent;
+}
+
+@property --colorb {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: black;
+}
+
+
+/* ref: https://dev.to/afif/we-can-finally-animate-css-gradient-kdk */
+@mixin linkline {
+
+    /* for Firefox */
+    --p1: 0%;
+    --p2: calc(100% - .1rem);
+    --p3: calc(100% - 1.1rem);
+    --p4: 0%;
+
+    --colora: $colora;
+    --colorb: $colorb;
+
+    --a: 180deg;
+
+    background-image: linear-gradient(var(--a), var(--colora) var(--p1), var(--colora) var(--p2), var(--colorb) var(--p3), var(--colorb) var(--p4));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @include transition(--colorb .2s ease-in-out, background-size .3s ease-in-out, color .2s ease-in-out);
+
+    @include hover {
+        color: $red;
+        --colorb: #E62700;
+        background-size: 0% 100%;
+    }
+}
+
+
+
+
+
+
 
 @mixin hover {
     &:hover {
@@ -277,34 +360,6 @@
 }  */
 
 
-@include keyframes(saturate-animation-on) {
-    0% {
-        filter: saturate(100%);
-        -webkit-filter: saturate(100%);
-    }
-
-    100% {
-        filter: saturate(200%);
-        -webkit-filter: saturate(200%);
-    }
-}
-
-
-
-@include keyframes(saturate-animation-off) {
-    0% {
-        filter: saturate(200%);
-        -webkit-filter: saturate(200%);
-    }
-
-    100% {
-        filter: saturate(100%);
-        -webkit-filter: saturate(100%);
-    }
-}
-
-
-
 @mixin animation($name, $timing, $count, $duration) {
     -webkit-animation-name: $name;
     -webkit-animation-timing-function: $timing;
@@ -316,16 +371,6 @@
     animation-iteration-count: $count;
     animation-duration: $duration;
 }
-
-
-
-
-
-@mixin saturate($val) {
-    -webkit-filter: saturate($val);
-    filter: saturate($val)
-}
-
 
 // Part Three: apply the mixin to the SCSS file a la
 // #animated-div { @include animation(name, ease-in-out, infinite, 4s); }

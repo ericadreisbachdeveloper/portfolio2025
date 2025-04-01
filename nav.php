@@ -15,7 +15,8 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) {
 
 
 <a href="<?php echo(SITE); ?>" aria-label="homepage" class="logo-href">
-erica dreisbach
+erica dreisbach<br>
+<h1 class="h1-default">Full Stack Web Developer </h1>
 </a>
 
 

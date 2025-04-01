@@ -18,15 +18,16 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) {
 
 <footer class="footer">
 
-    <div class="container center">
+    <div class="container align-content-center center">
 
-        <p class="small"><a href="<?php echo(SITE); ?>/privacy/">Privacy Policy</a></p>
+        <p class="p small"><a href="<?php echo(SITE); ?>/privacy/">Privacy Policy</a></p>
 
-        <p class="small">&copy;2006-<?php echo date('Y'); ?> <a href="https://ericadreisbach.com">erica dreisbach</a> + <a href="https://darkblackllc.com">Dark Black LLC</a></p>
+        <p class="p small">&copy;2006-<?php echo date('Y'); ?> <a href="https://ericadreisbach.com">erica dreisbach</a> + <a href="https://darkblackllc.com">Dark Black LLC</a></p>
 
     </div>
 
 </footer>
+
 
 
 </body>

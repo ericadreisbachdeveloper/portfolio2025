@@ -1,9 +1,23 @@
 <?php
-include('../config/config.php');
 
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) {
     header('Location: ' . SITE . '/error/');
 }
+
+
+/*
+ * session_start() creates a session or resumes the current one based on a session identifier passed
+ * via a GET or POST request, or passed via a cookie.
+ *
+ * ref: https://www.php.net/manual/en/function.session-start.php
+ */
+session_start();
+
+if (!isset($_SESSION['config'])) {
+    include('../config/config.php');
+}
+
+session_write_close();
 ?>
 
 <!DOCYTPE html>

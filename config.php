@@ -5,3 +5,5 @@ if ($_SERVER['SERVER_NAME'] === 'localhost') {
 } else {
     define('SITE', 'https://' . $_SERVER['HTTP_HOST']);
 }
+
+$_SESSION['config'] = 1;
