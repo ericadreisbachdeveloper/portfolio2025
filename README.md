@@ -15,3 +15,4 @@
 - https://www.wix.com/website-template/view/html/1885
 - https://jgbpedro.github.io/ 
 - https://badejo.framer.website/
+- https://youtu.be/n61ULEU7CO0?si=QzcmJRjXZkf75Lg5 animated text for hero
