@@ -15,7 +15,7 @@ include('header.php');
 <section class="section section-hero">
     <div class="container">
 
-        
+        <h1 class="h1">Full Stack Web Developer </h1>
         <h2 class="h2">Human Intelligence</h1>
 
     </div>

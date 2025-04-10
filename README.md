@@ -14,3 +14,4 @@
 - https://uizard.io/blog/content/images/size/w1600/2023/08/Screenshot-2023-08-03-at-13.46.27.png 
 - https://www.wix.com/website-template/view/html/1885
 - https://jgbpedro.github.io/ 
+- https://badejo.framer.website/
