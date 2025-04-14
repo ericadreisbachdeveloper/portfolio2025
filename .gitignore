@@ -86,3 +86,10 @@ node_modules/
 # $ git checkout main
 # $ git merge YYMMDD-remote 
 #
+
+
+
+# 
+# $ eval "$(ssh-agent -s)"
+# $ ssh-add ~/.ssh/id_ed25519
+# 
