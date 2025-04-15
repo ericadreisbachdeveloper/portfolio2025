@@ -1,0 +1,10 @@
+CHORES
+
+- load favicons properly 
+- favicon cheatsheet readily available 
+- JavaScript comments for es6 readily available 
+- hero height 
+- nice highlight effect on emphasis
+- AI flag 
+- sitemap: what pages are cached by Nene Google?
+- write up pricing cards 

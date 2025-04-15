@@ -33,10 +33,15 @@ session_write_close();
 
 <script src="<?php echo(SITE); ?>/assets/js/nav.js"></script>
 
+<?php /* AOS initialized before closing </body> */ ?>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 
+
 <body>
+
 
 
 <div class="wrapper">

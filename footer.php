@@ -30,6 +30,10 @@ if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) {
 
 
 
+<script defer> AOS.init(); </script>
+
+
+
 </body>
 
 </html>
