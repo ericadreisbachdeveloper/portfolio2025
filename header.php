@@ -29,7 +29,7 @@ session_write_close();
 
 <title>Top Full Stack Chicago Web Developer - erica dreisbach </title>
 
-<link rel="stylesheet" href="<?php echo(SITE); ?>/assets/css/style.css?v=1">
+<link rel="stylesheet" href="<?php echo(SITE); ?>/assets/css/style.css?v=2">
 
 <script src="<?php echo(SITE); ?>/assets/js/nav.js"></script>
 

@@ -15,8 +15,8 @@ include('header.php');
 <section class="section section-hero">
     <div class="container">
 
-        <h1 class="h1">Full Stack Web Developer </h1>
-        <h2 class="h2">Human Intelligence</h1>
+        <h1 class="h1">Automated Websites </h1>
+        <h1 class="h1 marker">Human Intelligence</h1>
 
     </div>
 </section>
@@ -26,9 +26,7 @@ include('header.php');
 <section class="section" id="erica-versus-artificial-intelligence">
     <div class="container">
 
-        <h2 class="h2">AI is a tool, but not a collaborator.</h2>
-
-        <p class="p center">Not yet, at least! </p>
+        <h2 class="h2">AI is a tool. You need a <span class="emphasis">collaborator.</span></h2>
 
     </div>
 </section>

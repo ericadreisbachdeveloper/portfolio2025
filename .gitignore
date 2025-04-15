@@ -2,6 +2,11 @@
 
 
 
+#
+# DON'T track bower
+#
+/bower_components
+
 
 #
 # DON'T track files that start with zz-
@@ -24,7 +29,7 @@ Thumbs.db
 gulpfile.js
 package.json
 static-config.json
-node_modules/
+/node_modules
 
 
 

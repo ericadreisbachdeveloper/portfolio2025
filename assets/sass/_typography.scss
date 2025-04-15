@@ -23,10 +23,41 @@
 
 
 
+/* color */
+.emphasis {
+    background-color: yellow;
+}
+
+
+
 /* font */
+@font-face {
+    font-family: 'marker';
+    src: url(../fonts/permanent-marker.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(../fonts/outfit.ttf) format('truetype');
+}
+
+
+html {
+    font-family: 'outfit', sans-serif;
+    font-weight: 400;
+}
+
+
+.h2,
+.marker {
+    font-family: marker, 'impact', sans-serif;
+    font-weight: 400;
+}
+
+
 .ul,
 %sans {
-    font-family: sans-serif;
+    //font-family: sans-serif;
 }
 
 .small,
@@ -67,8 +98,7 @@
     @extend %default;
 }
 
-.sr-only,
-.logo-href {
+.sr-only {
     @extend %large;
 }
 
@@ -117,15 +147,15 @@
         line-height: 2rem;
     }
 
-    %large,
-    %h2 {
+    %large {
         font-size: 2rem;
-        line-height: 2.414rem;
+        line-height: 2.5rem;
     }
 
+    %h2,
     %h1 {
-        font-size: 2.5rem;
-        line-height: 2.8rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
     }
 
 }
