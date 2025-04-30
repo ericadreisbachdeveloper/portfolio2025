@@ -41,16 +41,18 @@ static-config.json
 
 
 #
-# Ignore previously tracked content
-#
-# 1. update .gitignore and note content that's newly ignored
-#
-# $ git rm -r --cached .
-# $ git add .
-# $ git commit
-# $ git push
-#
-# 2. after push use S/FTP to post newly ignored content back to server
+# Ignore previously tracked content without changing on remote 
+# 
+# For a file
+# $ git update-index --assume-unchanged [file]
+# 
+# For a directory like wp-content/plugins/ or wp-content/uploads/
+# ref: https://stackoverflow.com/a/12288918
+# 
+# $ cd [DIR]
+# $ git ls-files | tr '\n' ' ' | xargs git update-index --assume-unchanged
+# 
+# ... and also update .gitignore so that new files in the ignored directories will be untracked
 
 
 
